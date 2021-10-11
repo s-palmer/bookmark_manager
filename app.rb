@@ -8,14 +8,9 @@ class BookmarkApp < Sinatra::Base
     erb :index
   end
 
-  get '/bookmarks' do
-    "This is a test bookmark"
-    
-    @manager = Manager.new
-    @manager.add_bookmark("Test")
-  
+  get '/bookmarks' do    
+    @manager = Manager.all
     erb :bookmarks
-
   end
 
   run! if app_file == $0

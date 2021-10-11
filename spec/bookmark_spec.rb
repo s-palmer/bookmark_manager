@@ -1,9 +1,9 @@
 require 'bookmark'
 
 describe Bookmark do
-  subject(:bookmark){ described_class.new("Facebook","facebook.com")}
-  it 'has a name' do
-    expect(subject.name).to eq "Facebook"
+  subject(:bookmark){ described_class.new(1,"facebook.com")}
+  it 'has an id' do
+    expect(subject.id).to eq 1
   end
 
   it 'has a URL' do
