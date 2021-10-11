@@ -4,7 +4,12 @@ require './lib/bookmark'
 
 class BookmarkApp < Sinatra::Base
   get '/' do
-    "hello world"
+    erb :index
   end
+
+  get '/bookmarks' do
+    "This is a test bookmark"
+  end
+
   run! if app_file == $0
 end
