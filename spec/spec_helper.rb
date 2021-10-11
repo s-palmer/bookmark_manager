@@ -12,8 +12,16 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
+
+require 'capybara/rspec'
+require 'capybara'
 require 'simplecov'
 require 'simplecov-console'
+require_relative '../app'
+# require 'features/web_helpers'
+
+Capybara.app = BookmarkApp
+
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
   # Want a nice code coverage website? Uncomment this next line!

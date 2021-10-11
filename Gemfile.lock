@@ -81,6 +81,8 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  nokogiri
+  rack (~> 2.2, >= 2.2.3)
   rspec
   selenium-webdriver
   simplecov
@@ -90,4 +92,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.2.26
+   2.2.28

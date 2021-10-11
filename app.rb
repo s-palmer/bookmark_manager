@@ -1,7 +1,8 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require './lib/bookmark'
 
-class RPS < Sinatra::Base
+class BookmarkApp < Sinatra::Base
   get '/' do
     "hello world"
   end
