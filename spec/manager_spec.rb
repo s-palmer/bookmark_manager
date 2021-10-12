@@ -7,9 +7,9 @@ describe Manager do
     it 'returns a list of bookmarks' do
       bookmarks = Manager.all
   
-      expect(bookmarks).to include "http://www.makersacademy.com/"
-      expect(bookmarks).to include "http://www.destroyallsoftware.com"
-      expect(bookmarks).to include "http://www.google.com/"
+      expect(bookmarks).to include "google.com"
+      expect(bookmarks).to include "twitter.com"
+      expect(bookmarks).to include "instagram.com"
     end
   end
 
