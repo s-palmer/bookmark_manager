@@ -16,6 +16,7 @@ GEM
     diff-lcs (1.4.4)
     docile (1.4.0)
     dotenv (2.7.6)
+    htmlbeautifier (1.3.1)
     mini_mime (1.1.2)
     multi_json (1.15.0)
     mustermann (1.1.1)
@@ -84,6 +85,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   dotenv
+  htmlbeautifier
   nokogiri
   pg
   rack (~> 2.2, >= 2.2.3)
