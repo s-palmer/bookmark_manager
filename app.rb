@@ -11,7 +11,6 @@ class BookmarkApp < Sinatra::Base
   post '/save' do
     p params
     Manager.add_bookmark(params[:bookmark_url])
-
     redirect to ('/')
   end
 
