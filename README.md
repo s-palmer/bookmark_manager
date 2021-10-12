@@ -5,8 +5,14 @@ User Stories
 
 ```
 As a user,
-So that I can keep track of the websites I visit,
-I want to see a list of them.
+So that I can keep track of my favourite websites,
+I want to see a list of bookmarks.
+```
+
+```
+As a user,
+So that I can store my favourite websites,
+I want to be able to add a new bookmark.
 ```
 
 Domain Model

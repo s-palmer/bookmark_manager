@@ -7,6 +7,13 @@ class BookmarkApp < Sinatra::Base
   get '/' do
     erb :index
   end
+  
+  post '/save' do
+    p params
+    Manager.add_bookmark(params[:bookmark_url])
+
+    redirect to ('/')
+  end
 
   get '/bookmarks' do    
     @manager = Manager.all
