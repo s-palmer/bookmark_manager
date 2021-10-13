@@ -10,7 +10,7 @@ end
 feature 'add new bookmark' do
   scenario 'create a new bookmark in a form' do
     add_test_bookmark
-    click_button('View All Bookmarks')
-    expect(page).to have_content('test.com')
+    go_to_bookmarks
+    expect(page).to have_content('Test')
   end
 end

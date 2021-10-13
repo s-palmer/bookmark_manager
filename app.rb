@@ -3,7 +3,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/bookmark'
-require './lib/manager'
 
 class BookmarkApp < Sinatra::Base
   get '/' do
@@ -12,12 +11,12 @@ class BookmarkApp < Sinatra::Base
 
   post '/save' do
     p params
-    Manager.add_bookmark(params[:bookmark_url])
+    Bookmark.add_bookmark(name: params[:bookmark_name], url: params[:bookmark_url])
     redirect to('/')
   end
 
   get '/bookmarks' do
-    @manager = Manager.all
+    @manager = Bookmark.all
     erb :bookmarks
   end
 
